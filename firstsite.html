@@ -16,11 +16,11 @@
 			nav
 			banner
 			-->
-			<hgroup>
-				<h1> Encuentra un Veterinario h1</h1>
-				<!-- Es muy importante por que es lo primero que ve google-->
-				<h2>Veterinario a Domicilio h2</h2>
-			</hgroup>
+			<!--<hgroup>-->
+			<h1> Encuentra un Veterinario h1</h1>
+			<!-- Es muy importante por que es lo primero que ve google-->
+			<h2>Veterinario a Domicilio h2</h2>
+			<!--</hgroup>-->
 			<nav>
 				<ul>
 					<li><a href="http://petvet.com"> Veterinario</a></li>
@@ -33,6 +33,42 @@
 				</ul>
 				<!-- ul = lista desordenada, ol lista ordenanda y con css se puede borrar los puntos o los nros-->
 			</nav>
+			<figure>
+				<img src="../multimedia/92962.png" alt="Ventilador">
+				<!--supuestamente al poner alt="es muy importante para el seo hay que poner info en texto de la imagen"-->
+				<figcaption>Te gusta el ventilador?</figcaption>
+				<!--es como la leyenda de la iamage, y se puede poner abajo o arriba de <img> pero en css se puede mover el figcaption y poner en cualquier lugar que una quiera, dentro o fuera de la imagen--> 
+			</figure>
+
+			
+			<audio src="../multimedia/pista06.mp3" type="audio/mp3" controls="controls"></audio>
+
+			<video src="../multimedia/video.mp4" type="video/mp4" controls="controls"></video>
+			<!--No es recomendable utilizar la etiqueta de video en una pagina por el poblema de compatibilidad del video con los diferentes expliradores-->
+			
+
+			<iframe src="https://www.youtube.com/embed/AjKPR8A6sNI" frameborder="0" allowfullscreen></iframe>
+			<!--
+			<video src="../multimedia/video.mp4" type="video/mp4" controls="controls codecs="H.264, vorbis"></video> 
+            eeste ejemplo esta bueno por si en algun momento quiero subir un video que esta alojado en mi servidor.
+
+            scr cadena que representa una URL uq esenhala a un archivo  de video
+
+            controls aributo booleano que activa un conjunto de controles de reproduccion integrados.
+
+            poster cadena que representa una imagen de marcador de posicion y que muestra en el reproductos de video. La imagen de poster que nosotros disenhamos por si el video no se encuentra disponible
+
+            loop es un booleando que vuelve a empezar cuando el video termina.
+
+            autoplay lanza el video cuando el bufer ya tiene informacion almacenada
+
+            preload atributo booleano, es util por hace que el video no tenga cortes cargando el video y no permitiendo que se corte la reproduccion.
+
+            height establece el alto de la reproduccionde video
+
+            wight es el ancho de la reproduccion.
+		     -->
+
 		</header>
 					
 		<section>
@@ -68,7 +104,14 @@
 		</aside>
 		<!-- aside es una etique que sirve para mostrar informacion que esta relacionada con la informacion que se encuentra en la sention-->
 		<footer>
-			
+			<p>pie de paginas informacion del contactos, closercodes</p>
 		</footer>
+		<form id='form' name='form' method='post' action='suscribe.php'>
+	       	<span>Si quieres enterarte de los nuevos cursos, suscríbete.</span>
+
+	        <input id='email' name='email' type='text' placeholder='Introduce tu email' onfocus='if(this.placeholder =='')this.placeholder ='Introduce tu email'' />
+
+	        <input type='submit' name='Submit' id='button' value='Suscríbete' />
+    	</form>
 	</body>
 </html>
