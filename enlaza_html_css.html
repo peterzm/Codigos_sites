@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title> html con css</title>
+		<!--Hay tres metodos para enlazar html y css-->
+		<!--Primera-->
+		<link rel="stylesheet" type="text/css" href="firstsite_css.css"> <!-- esta linea es para entrelazar html con css, esta es una form generar de enlazar el html con css, se pueden enlazar muchos archivos html a un solo archivo css y todos los archivos html tendran el mismo aspecto-->
+		<!--Segunda-->
+		<style>
+			div{
+				width: 50px;
+				height: 50px;
+				margin: 20px;
+				background: red;	
+			}
+		</style>
+		<!-- Esta forma de enlazar sirve si se quiere dar aspecto especifico auna pagina ya que los cambios que se realicen en los valores de la propiedades solo aran efecto a los div de esta pagina-->
+		
+	</head>
+	<body>
+		<header>hola mundo</header>
+		<div></div>
+		<div></div>
+		<div></div>
+		<!--Tercero-->
+		<div style="width: 50px;height: 50px;margin: 20px;background: blue;"></div>
+		<!--Con este metodo solo se cambia el estilo del div que tiene la propiedad style-->
+		
+		
+		
+		
+	</body>
+</html>
